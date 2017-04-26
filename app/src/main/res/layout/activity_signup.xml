@@ -1,0 +1,105 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <com.solodroid.ecommerce.SquareImageView
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_weight="0.16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:orientation="vertical" >
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/name"
+                android:drawableLeft="@mipmap/account"
+                android:hint="Name"
+                android:paddingLeft="0dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#999"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/username"
+                android:drawableLeft="@mipmap/gmail"
+                android:hint="Email"
+                android:layout_marginTop="10dp"
+
+                android:paddingLeft="0dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#999"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/mobile"
+                android:drawableLeft="@mipmap/mobile"
+                android:hint="Mobile"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="0dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#999"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/password"
+                android:drawableLeft="@mipmap/lock"
+                android:hint="Password"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="0dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#999"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/conform_password"
+                android:drawableLeft="@mipmap/lock"
+                android:hint="Conform Password"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="0dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#999"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Sign"
+                android:id="@+id/signn"
+                android:background="@drawable/selector_xml_btn_yellow"
+                android:layout_gravity="center_horizontal"
+                android:onClick="checkLogin"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
